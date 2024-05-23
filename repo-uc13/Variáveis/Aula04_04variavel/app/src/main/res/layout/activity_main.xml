@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Variaveis"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <EditText
+        android:id="@+id/editTextDouble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="DIgite um Double"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInt"
+        tools:layout_editor_absoluteX="64dp" />
+
+    <EditText
+        android:id="@+id/editTextString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Digite uma String"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDouble"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="64dp" />
+
+    <EditText
+        android:id="@+id/editTextInt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Digite um Int"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/textTitulo"
+        tools:layout_editor_absoluteX="64dp" />
+
+    <TextView
+        android:id="@+id/textInt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="Int: "
+        app:layout_constraintEnd_toStartOf="@+id/editTextInt"
+        app:layout_constraintTop_toTopOf="@+id/editTextInt" />
+
+    <TextView
+        android:id="@+id/textString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="String: "
+        app:layout_constraintBottom_toBottomOf="@+id/editTextString"
+        app:layout_constraintEnd_toStartOf="@+id/editTextString"
+        app:layout_constraintTop_toTopOf="@+id/editTextString"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textDouble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Double:"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDouble"
+        app:layout_constraintTop_toTopOf="@+id/editTextDouble" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:onClick="verInt"
+        android:text="Ver1"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextInt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextInt"
+        app:layout_constraintTop_toBottomOf="@+id/textTitulo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:onClick="verDouble"
+        android:text="Ver2"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextDouble"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextDouble" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Ver3"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextString"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextString" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
