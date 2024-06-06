@@ -65,4 +65,3 @@ Esta documentação está destinada a explicar e esclarecer alguns temas sobre o
 ### Layout
 - O Layout que irei usar será o “Blog w/ Sidebar”.
 - Esse Layout é a 5ª opção do site get.foundation.
-
