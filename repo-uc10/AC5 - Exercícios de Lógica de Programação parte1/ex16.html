@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 16: Desconto em Produto</title>
+    <style>
+        body, script{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Exercício 16: Desconto em Produto
+    Descrição: Elabore um programa que leia o valor de um produto e a porcentagem de desconto. Calcule e informe o valor do desconto e o preço final do produto.
+    Requisitos do Programa:
+    1. Solicitar ao usuário o valor do produto.
+    2. Solicitar ao usuário a porcentagem de desconto.
+    3. Calcular o valor do desconto.
+    4. Calcular o preço final do produto subtraindo o desconto do valor do produto.
+    5. Exibir o valor do desconto e o preço final do produto.
+
+    Exemplo: 
+    Valor do Produto: R$ 200.00
+    Porcentagem de Desconto: 15%
+    Valor do Desconto: R$ 30.00
+    Preço Final: R$ 170.00
+    -->
+
+    <h1>Desconto em Produtos</h1>
+    <script>
+        const valor_p = parseFloat(prompt("Insira o Valor do produto: "))
+            document.write("O Valor do Produto é: R$" + valor_p.toFixed(2) + "<br>")
+        const porcentagem_d = parseFloat(prompt("Insira a porcentagem do desconto: "))
+        const desconto = (porcentagem_d/100)
+            document.write("A Porcentagem de Desconto é: " + porcentagem_d + "%" + "<br>")
+        const valor_d = (valor_p*desconto).toFixed(2)
+            document.write("O Valor do Desconto é de: R$" + valor_d + "<br>")
+        const valor_f = (valor_p-valor_d).toFixed(2)
+            document.write("O Valor Final que você vai pagar será de: R$" + valor_f)
+
+            // Aqui, eu pedi para o usuário me fornecer algumas informações, como o valor do produto e a porcetagem de desconto, depois eu fiz a conta para deixar o desconto em porcentagem e calculei o valor do desconto (valor do produto vezes o desconto) e o valor produto fianl (valor do produto menos o valor do desconto)
+    </script>
+  </body>
+</html>

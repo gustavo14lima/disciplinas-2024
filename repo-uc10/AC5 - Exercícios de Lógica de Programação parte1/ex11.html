@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 11: Conversor de Temperatura</title>
+    <style>
+        body, script{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Exercício 11: Conversor de Temperatura
+    Descrição: Crie um programa que converta uma temperatura de Celsius para Fahrenheit.
+    Requisitos do Programa:
+    1. Solicitar ao usuário a temperatura em graus Celsius.
+    2. Converter a temperatura para Fahrenheit usando a fórmula: F=C×1.8+32.
+    3. Exibir a temperatura convertida.
+
+    Exemplo: 
+    Digite a temperatura em Celsius: 25
+    A temperatura em Fahrenheit é: 77
+    -->
+    <h1>Conversor de Temperatura</h1>
+    <script>
+        const temp_1 = parseFloat(prompt("Insira a sua Temperatura em gruas Celsius: "))
+            document.write("Sua Temperatura em Celsius é: " + temp_1 + "<br>")
+        const temp_2 = ((temp_1*1.8)+32)
+            document.write("Sua Temperatura em Fahrenheit é: "+ temp_2)
+    </script>
+  </body>
+</html>

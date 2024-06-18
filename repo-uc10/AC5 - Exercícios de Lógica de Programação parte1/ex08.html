@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 8: Calculadora de Perímetro de um Círculo</title>
+    <style>
+        body, script{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Exercício 8: Calculadora de Perímetro de um Círculo
+    Descrição: Crie um programa que calcule o perímetro de um círculo.
+    Requisitos do Programa:
+    1. Solicitar ao usuário o raio do círculo.
+    2. Calcular o perímetro usando a fórmula: P=2πRP = 2 \pi RP=2πR.
+    3. Exibir o perímetro.
+
+    Exemplo: 
+    Digite o raio do círculo: 3
+    O perímetro do círculo é: 18.85
+    -->
+    <h1>Calculadora de Perímetro de um Círculo</h1>
+    <script>
+        const raio = parseFloat(prompt("Insira o Raio do seu Círculo: "))
+            document.write("O raio do seu Círculo é: " + raio + "<br>")
+        const perimetro = (2*3.14*(raio)).toFixed(2)
+            document.write("O Perímetro do seu Círculo é: " + perimetro)
+
+            // pedi ao usuário colocar o raio do círculo e depois peguei o raio e multipiquei por pi(3,14) vezes 2, e mostrei para ele o perimetro do circulo
+    </script>
+  </body>
+</html>

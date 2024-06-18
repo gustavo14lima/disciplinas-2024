@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 6: Verificador de Maioridade</title>
+    <style>
+        body, script{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Exercício 6: Verificador de Maioridade
+    Descrição: Crie um programa que verifique se o usuário é maior de idade (18 anos ou mais).
+    Requisitos do Programa:
+    1. Solicitar ao usuário a sua idade.
+    2. Verificar se o usuário é maior de idade.
+    3. Exibir uma mensagem indicando se o usuário é maior de idade ou não.
+
+    Exemplo: 
+    Digite a sua idade: 20
+    Você é maior de idade.
+    -->
+
+    <h1>Verificador de Maioridade</h1>
+    <script>
+        const idade = parseInt(prompt("Insira a sua Idade: "))
+            document.write("Sua idade é: " + idade + "<br>")
+        if (idade >= 18){
+            document.write("Parabéns, você é maior de idade!")
+        }
+        else{
+            document.write("Infelizmente, você é menor de idade...")
+        }
+
+        // Aqui eu pedi para o usuário inserir usa idade, se ele tiver 18 ou mais, ele é maior de idade, se ele for menor de 18, ele é menor de idade
+    </script>
+  </body>
+</html>

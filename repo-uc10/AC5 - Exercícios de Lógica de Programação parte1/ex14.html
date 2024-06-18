@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 14: Rendimento de Depósito</title>
+    <style>
+        body, script{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Exercício 14: Rendimento de Depósito
+    Descrição: Elabore um programa que leia o valor de um depósito e a taxa de juros anual. Calcule e informe o valor do rendimento e o valor total após o rendimento.
+    Requisitos do Programa:
+    1. Solicitar ao usuário o valor do depósito.
+    2. Solicitar ao usuário a taxa de juros anual.
+    3. Calcular o valor do rendimento.
+    4. Calcular o valor total após o rendimento.
+    5. Exibir o valor do rendimento e o valor total após o rendimento.
+
+    Exemplo: 
+    Valor do Depósito: R$ 1000.00
+    Taxa de Juros: 5%
+    Rendimento: R$ 50.00
+    Valor Total: R$ 1050.00
+    -->
+
+    <h1>Rendimento de Depósito</h1>
+    <script>
+        const valor_deposito = parseFloat(prompt("Insira o valor do Depósito: "));
+            document.write("O valor do seu Depósito é: " + valor_deposito.toFixed(2) + "<br>");
+
+        const valor_taxa = parseFloat(prompt("Insira a taxa de juros anual: "));
+        const porcentagem_taxa = (valor_taxa / 100)
+            document.write("O valor da sua Taxa de Juros é: " + valor_taxa.toFixed(2) + "%" + "<br>");
+
+        const rendimento = (valor_deposito * porcentagem_taxa)
+            document.write("O Valor do seu Rendimento é de: " + rendimento.toFixed(2) + "<br>");
+
+        const valor_total = (valor_deposito + rendimento)
+            document.write("O Valor Total é: " + valor_total.toFixed(2));
+
+            // Pedi para o usuário colocar o valor do seu depósito e o valor da sua taxa anual de juros, na taxa eu dividi por 100 para representar porcentagem, depois multipliquei o valor do deposito com a porcentagem da taxa, para descobrir o rendimento, depois fiz o valor do deposito mais o rendimento, ai eu vou descobrir o valor total
+    </script>
+  </body>
+</html>

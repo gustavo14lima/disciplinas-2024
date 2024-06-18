@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 10: Conversor de Quilômetros para Milhas</title>
+    <style>
+        body, script{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Exercício 10: Conversor de Quilômetros para Milhas
+    Descrição: Crie um programa que converta uma distância em quilômetros para milhas.
+    Requisitos do Programa:
+    1. Solicitar ao usuário a distância em quilômetros.
+    2. Converter a distância para milhas usando a fórmula: 1 km=0.621371 milhas.
+    3. Exibir a distância convertida.
+
+    Exemplo: 
+    Digite a distância em quilômetros: 100
+    A distância em milhas é: 62.14
+    -->
+    <h1>Conversor de Quilômetros para Milhas</h1>
+    <script>
+        const km = parseFloat(prompt("Insira a sua distância em Quilômetros: "))
+            document.write("Sua distâcia em quilômetro é: " + km +" km" + "<br>")
+        const milhas = (km*0.621371).toFixed(2)
+            document.write("Sua distância em milhas é: "+milhas)
+
+            // Pedi para o usuário inserir a quantidade em quilômentros e depois eu peguei esse valor e multipliquei esse valor por 0.621371 e coloquei o toFixed(2) para aparecer apenas 2 casas decimais
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 9: Cálculo de Salário</title>
+    <style>
+        body, script{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Exercício 9: Cálculo de Salário
+    Descrição: Elabore um programa que leia a quantidade de dias trabalhados por um funcionário e o valor da diária. Calcule e informe o salário total do funcionário.
+    Requisitos do Programa:
+    1. Solicitar ao usuário a quantidade de dias trabalhados.
+    2. Solicitar ao usuário o valor da diária.
+    3. Calcular o salário total multiplicando a quantidade de dias pelo valor da diária.
+    4. Exibir o salário total.
+
+    Exemplo: 
+    Dias Trabalhados: 20
+    Valor da Diária: R$ 80.00
+    Salário Total: R$ 1600.00
+    -->
+    
+    <h1>Calculadora de Sálario</h1>
+    <script>
+        const dia = parseFloat(prompt("Quantos dias você trabalhou?"))
+            document.write("Você trabalhou " + dia + " dias" + "<br>")
+        const diaria = parseFloat(prompt("Qual é o valor da diária?")).toFixed(2)
+            document.write("A Valor da sua diária é: R$" + diaria  + "<br>")
+        const salario = (dia*diaria).toFixed(2)
+            document.write("O seu Salário total é de: R$"+salario  + "<br>")
+
+            // Eu pedi o dia que o usuário trabalhou e também  o valor da sua diária e depois eu apenas multiplique os dias e as diarias
+    </script>
+  </body>
+</html>

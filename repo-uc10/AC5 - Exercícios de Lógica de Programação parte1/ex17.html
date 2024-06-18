@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 17: Opções de Pagamento em Loja</title>
+    <style>
+        body, script{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Exercício 17: Opções de Pagamento em Loja
+    Descrição: Elabore um programa para uma loja que leia o preço de um produto e informe as opções de pagamento da loja. Calcule e informe o valor para pagamento à vista com 10% de desconto e o valor em 3x sem juros.
+    Requisitos do Programa:
+    1. Solicitar ao usuário o preço do produto.
+    2. Calcular o valor com 10% de desconto para pagamento à vista.
+    3. Calcular o valor da parcela para pagamento em 3x sem juros.
+    4. Exibir os valores das duas opções.
+
+    Exemplo: 
+    Preço: R$ 120.00
+    À Vista: R$ 108.00
+    Ou 3x de: R$ 40.00
+    -->
+
+    <script>
+        const valor_p = parseFloat(prompt("Insira o Valor do Produto: "))
+            document.write("O Valor do Produto é: R$" + valor_p.toFixed(2) + "<br>")
+        const desconto = (valor_p*0.10)
+        const pag_avista = (valor_p-desconto)
+            document.write("Se Você pagar à vista, você paga: R$" + pag_avista.toFixed(2) + "<br>")
+        const parcelado = (valor_p/3)
+            document.write("Ou, você pode pagar parcelando 3x de: R$" + parcelado.toFixed(2))
+
+            // Eu pedi para o usuário colocar o preço do valor do produto, depois eu calculei o valor do produto com 10% de desconto, depois multipliquei o desconto de 10% menos o valor do produto, por fim, eu parcelei por 3 vezes o valor do produto
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 18: Cálculo de Gorjeta</title>
+    <style>
+        body, script{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Exercício 18: Cálculo de Gorjeta
+    Descrição: Elabore um programa que leia o valor total de uma conta em um restaurante e a porcentagem da gorjeta que o cliente deseja dar. Calcule e informe o valor da gorjeta e o valor total a ser pago.
+    Requisitos do Programa:
+    1. Solicitar ao usuário o valor total da conta.
+    2. Solicitar ao usuário a porcentagem da gorjeta.
+    3. Calcular o valor da gorjeta.
+    4. Calcular o valor total a ser pago somando o valor da conta e o valor da gorjeta.
+    5. Exibir o valor da gorjeta e o valor total a ser pago.
+
+    Exemplo: 
+    Valor da Conta: R$ 200.00
+    Porcentagem da Gorjeta: 10%
+    Valor da Gorjeta: R$ 20.00
+    Valor Total: R$ 220.00
+    -->
+
+    <h1>Cálculo de Gorjeta</h1>
+    <script>
+        const valor_total = parseFloat(prompt("Insira o Valor total da Conta: "))
+            document.write("Esse é o valor total da conta: R$" + valor_total.toFixed(2) + "<br>")
+        const porcentagem_g = parseFloat(prompt("Insira a Porcentagem de Gorjeta: "))
+            document.write("Essa é a porcentagem de gorjeta: " + porcentagem_g+ "%" + "<br>")
+        const valor_gorjeta = (valor_total*(porcentagem_g/100))
+            document.write("Esse é o valor da gorjeta: R$"+ valor_gorjeta.toFixed(2) + "<br>")
+        const valor_f = (valor_total + valor_gorjeta)
+            document.write("Esse é o valor total: R$" + valor_f.toFixed(2)) 
+    </script>
+  </body>
+</html>
