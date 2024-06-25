@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Supermercado</title>
+</head>
+<body>
+    <header>
+        <h1>Supermercado</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Como Funciona</a></li>
+                <li><a href="#">Máquinas</a></li>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Promoção de Produtos de Higiene!</h2>
+        <h2 id="atencao">ATENÇÃO: NA COMPRA DE TRÊS PRODUTOS DE HIGIENE, VOCÊ RECEBERA UM DESCONTO!!!</h2>
+        <form>
+            <input type="text" placeholder="Insira o Nome do Produto" id="inProduto" required>
+            <input type="number" placeholder="Quantidade de Produtos" id="inQuantidade" required>
+            <input type="number" placeholder="Insira o Preço do Produto" id="inPreco">
+            <input  type="submit" class="botao" value="Calcular" required>
+        </form> 
+        <h3 id="outProduto"></h3>
+        <h3 id="outQuantidade"></h3>
+        <h3 id="outPreco"></h3>
+    </main>
+    <footer>
+        <p>2024 © gustavo14lima</p>
+        <ul>
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+        </ul>
+    </footer>
+    <script src="js/limaExercicio-3.js"></script>
+</body>
+</html>

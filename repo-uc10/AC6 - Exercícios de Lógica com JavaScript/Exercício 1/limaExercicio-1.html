@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Farmácia</title>
+</head>
+<body>
+    <header>
+        <h1>Farmácia</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Remédios</a></li>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Escolha o Remédio de sua preferencia!</h2>
+        <h2 id="atencao">ATENÇÃO: NA COMPRA DE DOIS REMÉDIOS, VOCÊ RECEBERA UM DESCONTO!!!</h2>
+        <form>
+            <input type="text" placeholder="Insira o Remédio de sua preferencia" id="inRemedio" required>
+            <input type="number" placeholder="Insira a Quantidade de Remédio" id="inQuantidade" required>
+            <input type="text" placeholder="Insira o Valor de Um Medicamento" id="inValor" required>
+            <input class="botao" type="submit" value="Calcular" required>
+        </form> 
+        <h3 id="outRemedio"></h3>
+        <h3 id="outQuantidade"></h3>
+        <h3 id="outValor"></h3>
+    </main>
+    <footer>
+        <p>2024 © gustavo14lima</p>
+        <ul>
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+        </ul>
+    </footer>
+    <script src="js/limaExercicio-1.js"></script>
+</body>
+</html>
