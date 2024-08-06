@@ -1,0 +1,1 @@
+console.log(food) //A saida deve ser: ['apple','banana','carrot','broccoli']
