@@ -23,24 +23,6 @@ body{
     background-color: #fafafa; /* Aqui troquei a cor de fundo de cada "seção"*/
     border-radius: 8px; /* Aqui dei um arredondamento de 8pixels nas bordas dos elementos boxs*/
 }
-
-/* Aqui foi para criar algumas colunas, para usar o metodo grid (se eu não me engano) */
-
-.column{
-    width: 48%; /* Aqui define que cada coluna do site terá 48% da medida total. Assim ao inves de 12 colunas teram 2 aproximadamente*/
-}
-.two-columns{
-    display: flex; /* Aqui deixei a 2° coluna em flexbox, que deixa os seus elementos filhos flexiveis*/
-    justify-content: space-between; /* Aqui todos os filhos da 2° coluna teram um espaçamento igual, mas o priemiro e o ultimo elemento 2° coluna ficaram presos na borda da caixa*/
-}
-.three-columns{
-    display: flex; /* Aqui deixei a 3° coluna em flexbox, que deixa os seus elementos filhos flexiveis*/
-    justify-content: space-between; /* Aqui todos os filhos da 3° coluna teram um espaçamento igual, mas o priemiro e o ultimo elemento 3° coluna ficaram presos na borda da caixa*/
-}
-.column-third{
-    width: 32%; /* Aqui define que a classe "column-third" terá uma largura de 32% da largura total do seu elemento pai*/
-}
-
 .highlignt{
     background-color: #ffe0b3;/* Aqui o background do highlignt, ou seja, a cor de fundo foi alterada*/
     padding: 5px;/* Esse atributo criou um espaçamento de 5px do elemento para a sua borda, tanto encima e baixo tanto direita e esquerda*/
@@ -61,8 +43,8 @@ th{
     background-color: #f0f0f0;
 }
 td{
-    background-color: #fff;
+    background-color: #f9f9f9;
 }
 caption{
-    font-weight: 800;
+    font-weight: bold;
 }
