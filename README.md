@@ -18,7 +18,7 @@ Abaixo, deixei a listadas das disciplinas com links direcionados para cada respe
 - [UC09 - Projeto integrador II](./repo-uc09)
 - [UC10 - Desenvolvimento de software](./repo-uc10)
 - [UC11 - Desenvolvimento de sistemas para desktops](./repo-uc11)
-- [UC12 - Inteligência Artificial](./repo-uc12)
+- [UC12 - Desenvolvimento de sistemas para internet](./repo-uc12)
 - [UC13 - Metodologias e Processos de Desenvolvimento de Software](./repo-uc13)
 - [UC14 - Metodologias e Processos de Desenvolvimento de Software](./repo-uc14)
 
