@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, sans-serif; /* O atributo font-familt tem sua funcionalidade de trocar a fonte de todos os elementos do body*/
+    margin: 0; /* Esse atributo tem sua funcionalidade de dar um espaçamento entre os elementos HTML, de uma maneira mais fácil de se entender, ele cria um espaçamento entre as caixas no HTML*/
+    padding: 0; /* Esse atributo tem sua funcionalidade de dar um espaçamento do elemento (exemplo, paragráfo) e dá borda do elemento, ou seja, ele cria um espaçamento dentro da caixa HTML*/
+    background-color: #f0f0f0 ; /* Esse atributo troca a cor do fundo de todo o body*/
+    box-sizing: border-box; /* Esse atributo tem como objetivo, de uma maneira mais facil de se entender, não contar a borda para fazer um border, por exemplo*/
+}
+
+
+.container{
+    width: 90%; /* Esse atributo define uma largura para o container*/
+    margin: 2% auto; /* Esse atributo cria um espaçamento entre as caixas. Mas ele cria um espaçamento de 2% encima e embaixo, e cria um espaçamento automaticamente na esquerda e direita, mas para calcular automaticamente precisa definir uma largura especifica*/
+    background-color: #fff; /* Esse atributo troca a cor do fundo do container*/
+    padding: 20px;/* Esse atributo tem sua funcionalidade de dar um espaçamento do elemento (exemplo, paragráfo) e dá borda do elemento, ou seja, ele cria um espaçamento dentro da caixa HTML*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.70); /*Esse atributo tem como o objetico criar uma "sombra* ao redor do container, especifiquei que é apenas na esquerda e direita (0 0) e a espesurra (que seria de 10px) e por fim decidi a cor, que seria preto com uma opacidade de 70%*/
+    border-radius: 8px; /* Esse atributo tem com o objetivo arrendondar a borda, especifiquei que queria que minha borda tivesse 8 pixels de arredondamento*/
+}
+/* Aqui é as boxs, ou seja, as seções do site */
+
+.box{
+    padding: 20px; /* Aqui define um espaçamento do elemento e sua borda, tendo um espaçamento de 20 pixels em todas as direções*/
+    margin: 20px 0; /* Aqui defini um espaçamento entre caixas, sendo 20pixels de espaçamento encima e embaixo e sem espaçamento na direita e esquerda*/
+    border: 1px solid #ddd; /* Aqui criei uma borda envolta de todas as box, tendo 1 pixel de espesura, solida (uma linha) e define uma cor a essa borda*/
+    background-color: #fafafa; /* Aqui troquei a cor de fundo de cada "seção"*/
+    border-radius: 8px; /* Aqui dei um arredondamento de 8pixels nas bordas dos elementos boxs*/
+}
+
+/* Aqui foi para criar algumas colunas, para usar o metodo grid (se eu não me engano) */
+
+.column{
+    width: 48%; /* Aqui define que cada coluna do site terá 48% da medida total. Assim ao inves de 12 colunas teram 2 aproximadamente*/
+}
+.two-columns{
+    display: flex; /* Aqui deixei a 2° coluna em flexbox, que deixa os seus elementos filhos flexiveis*/
+    justify-content: space-between; /* Aqui todos os filhos da 2° coluna teram um espaçamento igual, mas o priemiro e o ultimo elemento 2° coluna ficaram presos na borda da caixa*/
+}
+.three-columns{
+    display: flex; /* Aqui deixei a 3° coluna em flexbox, que deixa os seus elementos filhos flexiveis*/
+    justify-content: space-between; /* Aqui todos os filhos da 3° coluna teram um espaçamento igual, mas o priemiro e o ultimo elemento 3° coluna ficaram presos na borda da caixa*/
+}
+.column-third{
+    width: 32%; /* Aqui define que a classe "column-third" terá uma largura de 32% da largura total do seu elemento pai*/
+}
+
+code{
+    background-color: #f9f9f9; /* Aqui o background do code, ou seja, a cor de fundo foi alterada*/
+    padding: 2px 4px; /* Defini aqui e o code terá um espaçamento de 2px emcima e embaixo e de 4px na esquerda e na direita, um espaçamento do elemento com a borda de seu elemento pai (uma caixa)*/
+    border-radius: 3px;  /* Aqui defini que as imagens teram um arredondamento de 3 pixels em suas boras*/
+}
+blockquote{
+    border-left: 4px solid #ddd; /* Aqui eu defini uma borda no elemento blockquote, mas uma borda apenas na sua esquerda, tendo 4px de espesura, sendo solida (uma linha) e define uma cor a essa borda*/
+    margin: 10px 0; /* Aqui define um espaçamento entre caixas, tendo 10px encima e embaixo e não terá um espaçamento na direita e esquerda*/
+    padding-left: 10px; /* Aqui define um espaçamento entre o elemento e sua borda, mas um espaçamento de 10px apenas na esquerda*/
+    color: #666; /* Aqui troquei a cor da fonte, troquei a cor da letra do blockquote*/
+    font-style: italic; /* Aqui troquei seu estilo, deixando ele em itálico*/
+}
+.highlignt{
+    background-color: #ffe0b3;/* Aqui o background do highlignt, ou seja, a cor de fundo foi alterada*/
+    padding: 5px;/* Esse atributo criou um espaçamento de 5px do elemento para a sua borda, tanto encima e baixo tanto direita e esquerda*/
+    border-radius: 5px; /* Aqui defini um arredondamento de 5px em sua borda*/
+}
+
+ul, ol{
+    padding-left: 20px; /* Aqui defini um espaçamento do elemento para a borda, apenas na esquerda. Mas só dos elementos ul e ol*/
+}
+.vertical-list{
+    padding-left: 0; /* Aqui o espaçamento do elemento para a borda na esquerda foi definida como nenhuma*/
+    list-style-type: none; /* Aqui o "enfeite" das listas foi desativado*/
+}
+.vertical-list li{
+    display: flex; /* Aqui estou deixando o elemento "li" em display flex, deixandoo os seus elementos filhos flexiveis*/
+    align-items: center; /* Aqui estou deixando os elementos filhos do "li" centralizados no eixo vertical*/
+    margin-bottom: 10px; /* Aqui estou dando um espaçamento de 10px entre as caixas apenas na parte de baixo*/
+}
+.vertical-list li i{
+    margin-right: 10px; /* Aqui o elemento "i" que está dentro do "li" está tendo um espaçamento, entre as caixas, de 10px da parte da direita*/
+}
+.horizontal-list{
+    list-style-type: none; /* Aqui o "enfeite" das listas foi desativado*/
+    padding-left: 0; /* Aqui dexei o espaçamento entre o elemento e sua borda nulo na parte da esquerda, ou seja, sem espaçamento na parte da esquerda*/
+    display: flex; /* Aqui estou deixando a classe "horizontal-list" em display flex, deixandoo os seus elementos filhos flexiveis*/
+    gap: 20px;
+}
+.horizontal-list li{
+    display: flex; /* Aqui estou deixando o elemento "li" em display flex, deixandoo os seus elementos filhos flexiveis*/
+    align-items: center; /* Aqui estou deixando os elementos filhos do "li" centralizados no eixo vertical*/
+}
+.horizontal-list li i{
+    margin-right: 10px;/* Aqui o elemento "i" que está dentro do "li" está tendo um espaçamento, entre as caixas, de 10px da parte da direita*/
+}
