@@ -1,0 +1,47 @@
+Verdadeiro ou Falso
+    1.O modelo cliente-servidor é um padrão onde clientes e servidores têm funções idênticas. 
+        Falso
+    2.Todos os protocolos de rede garantem a entrega confiável de dados.
+        Falso (por exemplo, o UDP)
+
+Múltipla Escolha (Uma Resposta Correta)
+
+    3.Qual protocolo é comumente usado para o envio de e-mails? 
+        SMTP
+    4.Qual é a porta padrão para o protocolo HTTPS? 
+        443
+
+Múltipla Escolha (Múltiplas Respostas Corretas)
+
+    5.Quais dos seguintes são exemplos de serviços de rede? (Selecione todos que se aplicam) 
+        Serviço de E-mail  
+        Serviço Web  
+        Serviço DNS  
+    6.Quais das seguintes afirmações sobre portas de rede são verdadeiras? (Selecione todas que se aplicam) 
+        Portas são identificadas por números de 16 bits  
+        Portas permitem que múltiplos serviços operem em um único dispositivo 
+        A porta 80 é comumente usada para HTTP 
+
+Associação de Colunas
+    7.Associe os protocolos às suas funções principais:
+
+        A. HTTP			4. Transferência de hipertexto na web
+        B. SMTP			3. Envio de e-mails
+        C. FTP			1. Transferência segura de arquivos
+        D. DNS			2. Resolução de nomes de domínio
+        E. SFTP			5. Transferência de arquivos
+    8.Associe as portas aos seus serviços correspondentes:
+
+        A. 22			3. SSH
+        B. 80			1. HTTP
+        C. 443			2. HTTPS
+        D. 53			5. DNS
+        E. 25			4. SMTP
+
+Dissertativas
+
+    9.Explique o conceito de modelo cliente-servidor e dê um exemplo de sua aplicação na Internet.
+        O conceito do modelo cliente-servidor é um padrão para sistemas de rede em que, as tarefas são dividas entre as coisas/recursos do servidores e as solicitações dos serviços, que seria os clientes. Um grande exemplo, é acessar um site, em que vocÊ faz uma solicitação para o serviço web para acessar um site.
+
+    10.Descreva a importância dos protocolos de rede e como eles facilitam a comunicação entre dispositivos.
+        Os protocolos tem uma grande importância, seno ela definr como os dados são transmitidos, especificando o formato, sequência, timing e controlar os erros que pode ter na comunicação. Um grande exemplo de protocolo em que facilitam a comunicação é o DNS, que transforma nomes em ips, para facilitar a navegação e facilitar na memorização de sites e serviços.
