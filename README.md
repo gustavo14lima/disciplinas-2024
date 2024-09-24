@@ -19,7 +19,7 @@ Abaixo, deixei a listadas das disciplinas com links direcionados para cada respe
 - [UC10 - Desenvolvimento de software](./repo-uc10)
 - [UC11 - Desenvolvimento de sistemas para desktops](./repo-uc11)
 - [UC12 - Desenvolvimento de sistemas para internet](./repo-uc12)
-- [UC13 - Metodologias e Processos de Desenvolvimento de Software](./repo-uc13)
+- [UC13 - Desenvolvimento de Sistemas para Dispositivos Móveis](./repo-uc13)
 - [UC14 - Metodologias e Processos de Desenvolvimento de Software](./repo-uc14)
 
 ## 🧠 Objetivo
