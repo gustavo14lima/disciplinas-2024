@@ -1,0 +1,187 @@
+Capitulo 5:
+    Computadores usam regras (protocolos) para se comunicar.
+    Protocolos são necessários para que os computadores se comuniquem corretamento na rede.
+    Rede Local = área onde todos os hosts se comuniquem com a mesma linguagem, com o mesmo protocolo.
+    Se em uma rede local, dispositivos não tiverem o mesmo protocolos, eles não vão se comunicar corretamente.
+    Os protocolos são responsaveis por definirem as regras de comunicação da rede local. A seguir irei apresentar algumas caracteristicas dos protocolos e sua descrição:
+        -Formato da mensagem: dependendo do tipo de mensagem e do canal usado para entregá-la, ela deve usar um formato ou estrutura específica
+		-Tamanho da mensagem: parte muito rígida, pode ser diferente dependendo do canal, quando uma longa mensagem é enviada de um host para outro, se for preciso, irá dividir em mensagens menores para que a mensagem chegue de forma esperada
+		-Temporização: muitas funções de comunicação depende da temporização, ela determina a velocidade de bits que a sua mensagemvai ser transmitida na rede
+		-Codificação: as mensagens enviadas pela rede são transformadas em bits pelo host emissor, podendo ser um padrão de som, de ondas de luz ou de impulsos eletricos. Depois o host de destino transforma esses sinais (decodifcara) para que possa interpretar a mensagem.
+		-Encapsulamento: processo de adicionar informações de cabeçalho (destino e remetente), se não tiver essas coisas a mensagem não podera ser entregue.
+		-Padrão da mensagem: é um padrão que precisa de uma resposta para que outra mensagem possa ser enviada
+    Padrão = conjutno de regras que fala como as coisas devem ser feitas.
+    O padrão de rede e de internet assegura que todos os dispositivos conectados na rede vão ter o mesmo conjutos de protocolos. Permitindo que os dispositivos enviem informações entre si.
+    O padrão de Internet é um resultado final de um ciclo completo (de discussão, solução de problemas e testes).
+    Os padrões são desenvolvidos, pulicados e mantidos por difirentes organizações. Quando um novo padrão é proposto, tudo seu desenvolvimento e aprovação é documentado pela Request foor Comments (RFC), para que sua evolução seja monitorada.
+    As RFC de padrão de internet são publicadas e gerenciadas pela IETF (Internet Engineering Task Force).
+    Modelo em camada ajuda a ver o funcionamento dos diversos protocolos. No modelo de camada mostra as operações e interações em que cada camada faz, podendo um interagir com a outra.
+    O primeiro modelo em camada foi o modelo de internet (1970). Tendo 4 categorias para que a comunicação seja bem sucedida. O modelo de internet é conhecido como modelo TCP/IP  pois é usado para comunicação na internet. 
+    A seguir irei mostrar as camadas desse modelo e sua descrição:
+        -Aplicação : Representa dados para o usuário, codificação e controle de diálogo
+        -Transporte: permite e garante a comunicação do emisor para o destinatario, tanto na mesma rede quanto em redes diferentes
+        -Internet: calcula e mostra o melhor caminha pela rede até o destinatario
+        -Acesso à rede: ele contola os hardwares e o meio fisico que formam a rede.
+    Existem 2 modelos para saber se a comunicação foi feita de modo correto: 
+		-modelo de protocolo: corresponde muito bem a estrutura de um conjunto específico de protocolos, um conjuto de protocolo inclui todos os protocolos para que as pessoas se comuniquem com a rede de dados. Exemplo: O modelo TCP/IP é um modelo de protocolo, pois fala o que acontece em cada camada de protocolo.	
+		-modelo de referência: decreve as funções que devem ser concluidas em determinadas camadas, sem especificar a função que deve ser realizada, ele ajuda a entender melhor as funções e os processos necessários para as comunicações de rede
+    O modelo de referência mais conhecido é o projeto OSI (Open Systems Interconnection) feita pela ISO (Organização Internacional de Padronização), usado para projeto de redes de dados.
+    A seguir irei mostrar as camadas desse modelo e sua descrição:
+        7 Aplicação: protocolos usados para a comunicação de processo a processo
+        6 Apresentação: os dados transferidos entre os serviços da camada acima (camada de aplicação)
+        5 Sessão: fornece serviço para a camada acima, organizando o diálogo e gerenciando a troca de dados
+        4 Transporte: ela segmenta, transferi e reagrupa dados para comunicação individual
+        3 Rede: troca dados individuais pela rede, entre os dispositivos identificados
+        2 Enlance de Dados: descreve métodos para troca de quadros de dados
+        1 Físico: descreve os meios para aticas, mater e desativar conexões físicas para uma transmissão de bits de e para um dispositivo de rede 
+        Modelo OSI			Modelo TCP/IP
+		1. Aplicação, Apresentação e sessão = aplicação
+		2. Transporte 			=  Transporte
+		3. Rede 				= Internet
+		4. Enlace de Dados e Física 	= Acesso à Rede
+            1 = camada usada paara descrever 
+            protocolos que endereçam e encaminham mensagens em uma rede
+            2 = descreve os serviços e funções gerais para entregar os dados 
+            3 = usadas como referências para desenvolvedores e fornecedores de software de aplicação para produzir aplicaçõesque operam em redes.
+    
+Capitulo 6
+    Dados são transmitidos através de uma rede na mídia.
+    Mídia fornece o canal pelo qual a mensagem viaja.
+    As redes mais mordernas utilizam 3 tipos de midias para interconectar os dispositivos:
+        Fios de metal dentro de cabos: dados codificados em implusos elétricos
+        Fibras de vidro ou plástico nos cabos: Dados codificados em pulsos de luz
+        Transmissão sem fio: dados codificados através de ondas eletromagnéticas
+    A seguir terá os principais critérios para a escolha de midia de rede:
+            Qual é a distância máxima pela qual o meio físico consegue carregar um sinal com êxito?
+            Qual é o ambiente em que a mídia será instalada?
+            Qual é a quantidade de dados e a que velocidade deve ser transmitida?
+            Qual é o custo do meio físico e da instalação?
+    Os 3 cabos mais comuns são:
+        Par trançado: tecnologia Ethernet, cabo mais comumente encontrado. OS fios são agrupados em pares (em um par, um fio é de cor sólida e o outro é da mesma cor so que com fundo branco) e torcidos juntos para reduzi interferencia
+        Cabo Coaxial: um dos primeiros cabo de rede. Cabo de cobre, usado por empresas de TV a cabo, também usado em comunicação via satélite. Tem apenas um núcleo de cobre rígido, cercado por um camada de isolamento e blindagem. Usado para altas frequencias ou banda larga.
+        Cabo de Fibra Optica: feito de vidro ou plástico, diametro de um fio de cabelo humano, transporta informações em velocidades muito altas por longas distancias. Se usa a luz ao inves de eletricidade. Tem uma largura de banda muito alta, permitindo transmitir grandes quantidades de dados
+    
+Capitulo 7
+    Mensagem enviada em uma rede segue regras especificas de formato para que seja entregue e processada.
+    O Encapsulamento é o processo de colocar um formato de mensagem em outro formato de mensagem. 
+    O desencapsulamento é o processo invertido pelo destinatario.
+    Cada mensagem é encapsulada em um formato especifico, chamada de quadro.
+    O quadro atua como um envelope: fornece o endereço do destino e o de origem.
+    O centeudo e o formato do quadro é determinado pelo tipo de mensagem que está sendo enviada e pelo canal.
+    mensagens que não são formadas corretamentes não são entregues
+    O IP (Internet Protocol) é responsável por enviar uma mensagem da orgiem até o destino, através de redes.
+    (me explique sobre estes pontos abaixo:)
+    O Switches Ethernet são dispositivos de rede que operam na camada de Enlace de Dados do modelo OSI. Eles são usados para conectar dispositivos em uma rede local.
+    Encaminham quadros de dados entre dispositivos na rede
+    Criam domínios de colisão separados para cada porta
+    Melhoram a eficiência da rede ao enviar dados apenas para o destinatário pretendido
+    A Tabela de Endereços MAC é um componente crucial do switch. 
+    Ela armazena dinamicamente os endereços MAC dos dispositivos conectados a cada porta do switch
+    Permitindo que o switch tome decisões de encaminhamento baseadas nesses endereços
+    E está tabela é construída e atualizada automaticamente à medida que o switch "aprende" sobre os dispositivos na rede
+    Exemplo de como funciona:
+        Quando um quadro chega a uma porta do switch, o dispositivo examina o endereço MAC de origem.
+        O switch associa esse endereço MAC à porta de entrada e armazena essa informação na tabela.
+        O switch então verifica o endereço MAC de destino:
+        Se o endereço está na tabela, o quadro é enviado apenas para a porta correspondente.
+        Se não está na tabela ou é um endereço de broadcast, o quadro é enviado para todas as portas (exceto a de origem).
+
+Capitulo 8
+    Para entrar na internet, um host precisa de um endereço UPv4.
+    O endereço IPv4 é um endereço de rede lógica que identifica um host especifico.
+    Para fornecer uma comunicação local, ele precisa ser configurado corretamente e de forma exclusiva.
+    Muitas das vezes, o endreço IPv4 se é atribuido pela placa de interface de rede (NIC). Um servidor que tem mais de uma NIC pode ter mais de um IP!
+    A maioria dos dispositivos que tem um IP é um dispositivo de usuário final com interfaces de rede.
+    Todos os pacotes que são enviados pela internet tem um IP de origem e destino. Garantindo que os dados cheguem ao destino e retorne uma resposta para o IP de origem.
+    O endereço IPv4 tem 32bits de comprimento.
+    Por endereços com 32bits serem muito grandes, decidiram dividir 32bits em 4 octetos, ou seja, a cada 8bits tem uma separação (um ponto). Exemplo:
+        11010001.10100101.11001000.00000001
+    Ainda estando dificil de ler, converteram os octetos para o seu valor decimal, separando cada decimal por ponto. Exemplo:
+        209.165.200.1 
+        O endereço Ipv4 de 32bits é hierárquio, ele tem 2 partes, a parte de rede e a parte de host.
+        Em um endereço 192.168.5.11, os 3 primeiros octetos é a parte de rede (192.168.5) e o úlimo octeto é a parte do host(11).
+        Isso é conhecido como endereçamento hierarquico, pois a parte da rede mostra a rede na qual cada host está localizado.
+        Ambas as partes são importantes e necessárias para um endereço IPv4.
+        A mascara de sub-rede é usada para identificar a rede qual host está conectado.
+        
+Capitulo 9
+    Transmissão Unicast: esse é um jeito de se fazer uma transmissão de pacotes, mas ela apenas faz esse transmissão de um dispositivo para outro. É uma comunicação um-para-um.
+    O endereço de IP de origem sempre será o endereço unicast, pois a transmissão só vai se originar de um único IP de origem.
+    Transmissão Broadcast: essa transmissão é quando um dispositivo envia uma mensagem para todos os dispositivos da rede, sendo uma comunicação de um para todos.
+    Pacote broadcast deve ser porcessado por todos os dispositivos do mesmo domínio broadcast.
+    O domínio broadcast identifica todos os host com a mesma parte de rede.
+    Existem 2 tipos de broadcast: o broadcast direcionado (envia pacotos para todos os hosts de uma determinada rede) e o broadcast limitado (é enviado para 255.255.255.255).
+    Obs.:Por padrão os roteadores não enviam broadcast
+    Transmissão Multicast: essa transmissão é quando um host envia um pacote para um conjunto de host selecionados, que participam de um mesmo grupo Multicast.
+    Clientes Multicast são aqueles hosts que recebem pacotes Multicast
+    Em outras palavras, a transmissão Multicast é quando você envia um pacote para toda rede, mas apenas um determinado grupo pode acessar esse pacote.
+    Endereços IPv4 públicos são endereços roetados globalmente entre os roteadores do provedor de Internet (ISP).
+    Redes Privadas não pode ser usadas para acessar a internet, quando a rede publica é usada especialmente para acessar a internet.
+    Redes públicas não são exclusivas e pode ser usadas internamente em qualquer rede.
+    A seguir irei mostrar alguns endereços IPv4 de redes públicas:
+            Começo              Fim
+        10.0.0.0/8          10.255.255.255
+        172.16.0.0/12       172.16.31.255.255
+        192.168.0.0/16      192.168.255.255
+    A maioria de redes internas usam os endereços IPv4 privados, mas como dito anteriormente, eles não são globalmente roteavies.
+    Para que os pacotes de endereços privados vão para a internet, os endereços privados são traduzidos ou descartados para IPv4 públicos.
+    Essa tradução é feita pela Conversão de Endereços de Rede (NAT)
+    Os endereços  de loopback (identificado apenas como 127.0.0.1) são endereços que direcionam o tráfego para ele mesmo. O comando ping é um ótimo exemplo para esse tipo de endereço.
+    A seguir irei apresentar todas as classes especificas do endereço privado:
+            Classe A (0.0.0.0/8 to 127.0.0.0/8) – Projetado para suportar redes extremamente grandes, essa classe usa um prefixo fixo /8 com o primeiro octeto para indicar a parte de rede e os três octetos restantes para a parte de host.
+            Classe B (128.0.0.0 / 16 - 191.255.0.0 / 16) - Projetada para oferecer suporte às necessidades de redes de tamanho moderado, essa classe usa um prefixo fixo /16 com os dois octetos para indicar a parte da rede e os dois octetos restantes para a parte de host.
+            Classe C (192.0.0.0 / 24 - 223.255.255.0 / 24) - Projetado para oferecer suporte a pequenas redes, essa classe usa um prefixo fixo / 24 com os três primeiros octetos para indicar a parte da rede e o octeto restante para a parte do host.
+    Endereços Públicos são roteados globalmente para a internet, são exclusivos.
+    Em uma rede, uma transmissão broadcast pode ser usada para localizar outros dispositivos, usando o Protocolo de Resolução de Endereços(ARP) e o prórprio broadcast.
+    Se manda o broadcast para toda a rede com o objetivo de descobrir e atualizar os endereços MACs.
+    Você pode achar outros dispositivos a partir de outros dispositivos, exemplos, um host usa o protocolo DHCP que envia broadcast para localizar um servidor DHCP.
+    O switch que é responsável por enviar o broadcast, ele manda para todos os hosts, menos para aqueles que ele já conhece. Obs.: roteadores não fazem broadcast, ele não encaminha para as outras interfaces.
+    Quando uma rede tem muitos usuários e enviar uma transmissão broadcast pode afetar a rede, uma forma sensata de se resolver é dividir a rede em sub-redes (redes menores). Por exemplo:
+        Se você tiver uma rede com 400 usuários, você pode fazer uma sub-rede desta rede de 400 usuários. Exemplo: 172.16.0.0/24 e 172.16.1.0/24
+        Assim o broadcast do 172.16.0.0 não vai se propagar para o outro endereço IPv4.
+    Assim você reduz o trafego total da rede e melhora o desempenho da rede. Com isso, você pode apresentar regras em limitam o que cada rede pode fazer. 
+    A seguir irei apresentar alguns metodos para se segmentar uma rede:
+        Segmentação Local (mesmo predio, cada andar terá ima rede)
+        Grupo ou Função (administradores teram uma rede separada dos alunos por exemplo)        
+        Tipo de dispositivo (as impressoras teram uma rede separada dos servidores por exemplo)        
+
+Capitulo 10
+    O IPv6 foi projetado para ser o sucessor do IPv4, para quando o IPv4 ficar sem endereços.
+    O IPv6 tem um espaço de 128bits, sendo assim maior que o IPv4.
+    Quando a IETF foi desenvolvver um sucessor para o IPv4, ela aproveitou e fez alguns ajustes e aprimoramentos no IPv4, sendo um deles a resolução de endereços e configuações automáticas de endereço.
+    Muitas das RIR estão com os endereços IPv4 esgotados, sendo assim o maior motivo para migrar para o IPv6.
+    Com isso, a IETF já criou vários protocolos para os administradores começarem a migrar para o IPv6.
+    Podendo ser divida em 3 categorias:
+        Pilha Dupla: permite que a rede tenha tanto o IPv4 quanto o IPv6. Ela vai executar ambos protocolos simultaneamente.
+        Tunelamento: metodo para o transporte de pacotes IPv6 em uma rede IPv4. O pacote IPv6 será encapsulad em um pacote IPv4, assim vai se "passar" como um pacote IPv4.
+        Conversão: esse é uma tecnica em que se consiste em endereços com o IPv6 consigam se comunicar com endereços IPv4, através do NAt IPv4. Para isso acontecer, um pacote IPv6 seria traduzido para IPv4 e o pacote IPv4 seria traduzido para um pacote IPv6.
+    Os endereços IPv6 são representados em valores hexadecimais (base 16, de 0 a 9 e de A até F). Obs.: na parte das letras pode ser tanto maisculas quanto minusculas.
+    No endereço Ipv6 a cada 4bits é representados por 1 digito hexadecimal.
+    Enquanto no IPv4 falamos octetos para um conjuto com 8bits, no IPv6 falamos hexteto, uma forma não oficial de agrupar um segmento de 16bits ou 4 algarismos hexadecimais.
+    Um endereço IPv6 é composto com 8 hexteto. Exemplo:
+        2001 : 0db8 : 0000 : 1111 : 0000 : 0000 : 0000: 0200
+    No IPv6 tem algumas regras para reduizz a notação do endereço. A seuir irei explicar 2 regras:
+        1° Regra: você vai omitir (apagar ou desaparecer) os 0 apenas da esquerda de qualquer hexteto, você não deve apagar os zeros da direita apenas os zeros da esquerda. Exemplo:
+            IPv6 normal:
+                2001 : 0db8 : 0012 : 1111 : 0013 : 0014 : 0016: 0200
+            IPv6 seguindo a Primeira regra:
+                2001 : db8 : 12 : 1111 : 13 : 14 : 16: 200  
+            (observe-se que omiti apenas os 0s da esquerda, e não os da direita)             
+        2° Regra:
+            Quando você tiver 2 ou mais hextetos seguitos de 0, você apenas pode deixar (::). Você só deve usar essa regra uma vez no endereço e os hextetos devem ser seguidos, pois você pdoe sinuar que tem mais de um endereço possivel. Exemplo:
+            IPv6 nornal:
+                2001 : 0db8 : 0000 : 1111 : 0000 : 0000 : 0000: 0200
+            IPv6 utilizando a 2° regra:
+                2001 : 0db8 : 0000 : 1111 :: 0200 
+            (observe-se que na sequência de hextetos com 0, os 3 atepenultimos, foram omitdos e sobrou apenas os ::. Você pode identificar quantos hextetos foram obtidos apenas pegando o número de hextetos que tem no endereço e subtrair com 8, pois é o número total de hexteto que um endereço IPv6 pode ter)
+
+Capitulo 11
+    Um endereço IPv4 pode ser estático ou dinamicamente.
+    Com o endereço IPv4 estático, o administrador de rede irá configurar toda a rede manualmente, Pc por Pc, configurando Endereço IP, Máscara de Sub-rede e o Gateway.
+    Podendo ser util para dispositivos que precisam estar acesseivel para o cliente. Proporcionando um controle maior de recursos, e também pode ser um processo demorado. E também pelo fato do administrador digitar manualmente, pode abrir probabilidades dele errar em algo, abrindo uma grande margens de erro quando se utiliza esse metodo.
+    O protocolo Dynamic Host Configuration Portocol (DHCP) faz com que os endereços IPv4 sejam configurados e recebam as devidas informações de endereçamento automaticamente.
+    Esse método é muito utilizado em grandes redes, pois reduz a elimina erros e também não precisa ficar digitando manualmente os endereços.
+    Um grande beneficio do DHCP é, se um host sair ou ser desligado da rede, o seu endereço e informações de rede ficaram alocadas na pool e poderam ser reutilizados em outros dispositivos.
+    A "magica" atras do DHCP é, quando você entra na area da rede, o cliente DHCP no seu dispositivo vai entrar em contato com o servidor DHCP do local e você terá um endereço IPv4.
+    PAra ser um servidor DHCP, você apenas precisa de um dispositivo que possa executar o software de serviço DHCP.
+    O seu roteador se fio atua tanto como servidor DHCP quanto cliente DHCP, pois ele recebe as configurações de IPv4 do ISP e ele atua como servidor para os dispositivos da sua casa por exemplo.
