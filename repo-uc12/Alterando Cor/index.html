@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Alterando Cor</title>
+</head>
+<body>
+    <!-- main>button*5+br+input+button+input -->
+    <main>
+        <h1>Troca de Cores</h1>
+        <!-- Quando for colocar parametros em uma função, utilizamos aspas simples -->
+        <button onclick="trocarCor('red')">Vermelho</button>
+        <button onclick="trocarCor('green')">Verde</button>
+        <button onclick="trocarCor('blue')">Azul</button>
+        <button onclick="trocarCor('yellow')">Amarelo</button>
+        <button onclick="trocarCorAleatoria()">Cor aleatória</button>
+        <br>
+        <input type="text" placeholder="Nome da Cor ou seu #Hex" class="input-cor">
+        <button onclick="corPersonalizada()">Aplicar cor</button>
+        <input type="color" onchange="trocarCor(this.value)">
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
