@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1728246986639,
+    "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
+    "autor": "J.R.R Tolkien",
+    "isbn": "978-0-618-00223-9 ",
+    "anoPublicacao": "1954",
+    "generos": [
+      "Fantasia",
+      " Aventura",
+      " Épico"
+    ],
+    "emprestado": false
+  },
+  {
+    "id": 1728247057446,
+    "titulo": "O Senhor dos Anéis: O Retorno do Rei",
+    "autor": "J.R.R. Tolkien",
+    "isbn": "978-0-618-00225-3",
+    "anoPublicacao": "1955",
+    "generos": [
+      " Fantasia",
+      " Aventura",
+      " Épico"
+    ],
+    "emprestado": false
+  }
+]
