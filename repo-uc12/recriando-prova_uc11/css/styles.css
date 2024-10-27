@@ -1,0 +1,129 @@
+/* Basic Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+/* Start style the Header */
+header{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    margin: 20px;
+}
+/* Start style the title main */
+header h1{
+    color: #3560B5;
+    padding-left: 15rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+}
+/* End style the title main */
+/* Start style nav */
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 5rem;
+    font-size: 1.5rem;
+}
+header nav ul:last-child{
+    padding-right: 20rem;
+}
+header nav ul a{
+    color: #4C4C4C;
+    text-decoration: none;
+}
+/* End style the nav */
+/* End style the Header */
+/* Start style the main */
+main{
+    border-top: 5px solid #EEE;
+    padding-top: 30px;
+}
+/* Start style the sections as a whole */
+section{
+    display: flex;
+    margin: 30px 15rem;
+    max-width: 69rem;
+}
+/* End style the sections as a whole */
+/* Start style the texts of sections */
+.part-text{
+    margin-left: 3rem;
+}
+.part-text h2{
+    color: #4C4C4C;
+    font-size: 2rem;
+}
+.part-text p{
+    margin: 10px 20px;
+    color: #C3C3C3;
+}
+.part-text .bold-text{
+    margin-left: 0px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    color: #000;
+}
+/* End style the texts of the sections */
+/* Start syle the button "SAIBA MAIS" */
+.part-text .btn-saiba{
+    border: 1px solid #4285F4;
+    background-color: #4285F4;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 30px;
+}
+/* End syle the button "SAIBA MAIS" */
+/* End style the main */
+/* Start style the footer */
+footer{
+    background-color: #2E3951;
+}
+/* Start style the buttons of the footer */
+footer .part-btn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 2px solid #252E41;
+}
+footer .part-btn .btn{
+    margin: 20px 0;
+    border: 3px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 50px;
+    font-weight: bold;
+}
+/* End style the buttons of the footer */
+/* Start style the part of social medias */
+footer .part-medias{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+/* Style imgs of social medias */
+img{
+    width: 2%;
+}
+/* End style the part of social medias */
+/* Start style part of copyright */
+footer .part-copyright{
+    padding: 20px;
+    background-color: #252E41;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+footer .part-copyright #weak-text{
+    color: #C3C3C3;
+}
+footer .part-copyright .bold-text{
+    font-weight: 800;
+    margin-left: 5px;
+}
+/* End style part of copyright */
+/* End style the footer */
